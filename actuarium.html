@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Uplimity!</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+<script>
+  if(window.location.hash) {
+    var name = window.location.hash.substring(1);
+    document.getElementById("para").innerHTML(name);
+    alert(name);
+  }
+  // Holt den gesamten Querystring der URL (param1=hallo)
+  //const queryString = window.location.search;
+
+  // Extrahiert aus dem Querystring einzelne Parameter
+  //const urlParams = new URLSearchParams(queryString);
+
+  // Liest mit .get() die Werte der Parameter aus
+  //const param1 = urlParams.get('param1');
+    
+  //alert('Discord Invite von ' + param1);
+</script>
+
+<body background="./assets/background.png">
+  <section>
+    <nav>
+      <div class="logo">
+        <img src="./assets/logo.jpg" alt="mind" style="max-width: 30%;">
+        <h1 id="para">Invitation from Actuarium</h1>
+      </div>        
+      <div class="links">
+        <a href="#lindemann">our story</a>
+        <a href="#actuarium">practise</a>
+        <a href="#arakon">classes</a>
+      </div>
+    </nav>
+    <div class="selling-point">
+      <h2>Let your mind breath</h2>
+      <h3>I can't breath!</h3>
+      <div class="ctas">
+        <button class="cta-sec" onclick="window.location.href='https://discord.com/invite/r2fbxFx9HF';">Become Trans</button>
+        <button class="cta-main" onclick="window.location.href='https://discord.com/register';">Join Discord</button>
+      </div>
+    </div>    
+  </section>
+</body>
+</html>
